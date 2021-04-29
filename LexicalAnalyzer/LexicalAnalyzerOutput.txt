@@ -1,0 +1,165 @@
+
+-------------------------------------------------------------------------------------------------------
+                        Lexeme 	--->	 Token 	                   Line Number
+-------------------------------------------------------------------------------------------------------
+             #include<stdio.h> 	--->	PREPROCESSOR 	                             1
+               #define zz 5.63 	--->	PREPROCESSOR 	                             2
+                          void 	--->	KEYWORD: DATATYPE 	                     4
+                          main 	--->	MAIN FUNCTION 	                             4
+                             ( 	--->	PARENTHESIS 	                             4
+                             ) 	--->	PARENTHESIS 	                             4
+                             { 	--->	PARENTHESIS 	                             5
+                          char 	--->	KEYWORD: DATATYPE 	                     6
+                             x 	--->	IDENTIFIER 	                             6
+                             [ 	--->	PARENTHESIS 	                             6
+                             5 	--->	NUMERICAL CONSTANT 	                     6
+                             ] 	--->	PARENTHESIS 	                             6
+                             , 	--->	COMMA 	                                     6
+                             y 	--->	IDENTIFIER 	                             6
+                             = 	--->	OPERATOR: ASSIGNMENT 	                     6
+                           'A' 	--->	CHARACTER 	                             6
+                             ; 	--->	SEMICOLON 	                             6
+                           int 	--->	KEYWORD: DATATYPE 	                     7
+                           $a6 	--->	✖✖✖ INVALID IDENTIFIER ✖✖✖ 	      7
+                             , 	--->	COMMA 	                                     7
+                           5xy 	--->	✖✖✖ INVALID IDENTIFIER ✖✖✖ 	      7
+                             , 	--->	COMMA 	                                     7
+                             a 	--->	IDENTIFIER 	                             7
+                             , 	--->	COMMA 	                                     7
+                             b 	--->	IDENTIFIER 	                             7
+                             , 	--->	COMMA 	                                     7
+                             c 	--->	IDENTIFIER 	                             7
+                             , 	--->	COMMA 	                                     7
+                             d 	--->	IDENTIFIER 	                             7
+                             , 	--->	COMMA 	                                     7
+                             i 	--->	IDENTIFIER 	                             7
+                             = 	--->	OPERATOR: ASSIGNMENT 	                     7
+                             0 	--->	NUMERICAL CONSTANT 	                     7
+                             ; 	--->	SEMICOLON 	                             7
+                             a 	--->	IDENTIFIER 	                             8
+                             = 	--->	OPERATOR: ASSIGNMENT 	                     8
+                             1 	--->	NUMERICAL CONSTANT 	                     8
+                             ; 	--->	SEMICOLON 	                             8
+//this is a single line comment 	--->	SINGLELINE COMMENT 	                     8
+                             b 	--->	IDENTIFIER 	                             9
+                             = 	--->	OPERATOR: ASSIGNMENT 	                     9
+                            10 	--->	NUMERICAL CONSTANT 	                     9
+                             ; 	--->	SEMICOLON 	                             9
+                             c 	--->	IDENTIFIER 	                            10
+                             = 	--->	OPERATOR: ASSIGNMENT 	                    10
+                          12.3 	--->	NUMERICAL CONSTANT 	                    10
+                             ; 	--->	SEMICOLON 	                            10
+                             a 	--->	IDENTIFIER 	                            11
+                            *= 	--->	OPERATOR: ASSIGNMENT 	                    11
+                             b 	--->	IDENTIFIER 	                            11
+                             ; 	--->	SEMICOLON 	                            11
+                             b 	--->	IDENTIFIER 	                            12
+                            += 	--->	OPERATOR: ASSIGNMENT 	                    12
+                             a 	--->	IDENTIFIER 	                            12
+                             / 	--->	OPERATOR: ARITHMETIC 	                    12
+                             c 	--->	IDENTIFIER 	                            12
+                             - 	--->	OPERATOR: ARITHMETIC 	                    12
+                             1 	--->	NUMERICAL CONSTANT 	                    12
+                             ; 	--->	SEMICOLON 	                            12
+                             c 	--->	IDENTIFIER 	                            13
+                            -= 	--->	OPERATOR: ASSIGNMENT 	                    13
+                             a 	--->	IDENTIFIER 	                            13
+                             + 	--->	OPERATOR: ARITHMETIC 	                    13
+                             b 	--->	IDENTIFIER 	                            13
+                             % 	--->	OPERATOR: ARITHMETIC 	                    13
+                             d 	--->	IDENTIFIER 	                            13
+                             ; 	--->	SEMICOLON 	                            13
+                           for 	--->	KEYWORD: CONTROL STATEMENT 	             14
+                             ( 	--->	PARENTHESIS 	                            14
+                             i 	--->	IDENTIFIER 	                            14
+                             = 	--->	OPERATOR: ASSIGNMENT 	                    14
+                             0 	--->	NUMERICAL CONSTANT 	                    14
+                             ; 	--->	SEMICOLON 	                            14
+                             i 	--->	IDENTIFIER 	                            14
+                             < 	--->	OPERATOR: RELATIONAL 	                    14
+                             5 	--->	NUMERICAL CONSTANT 	                    14
+                             ; 	--->	SEMICOLON 	                            14
+                             i 	--->	IDENTIFIER 	                            14
+                            ++ 	--->	OPERATOR: UNARY 	                    14
+                             ) 	--->	PARENTHESIS 	                            14
+                             { 	--->	PARENTHESIS 	                            15
+                           int 	--->	KEYWORD: DATATYPE 	                    16
+                             a 	--->	IDENTIFIER 	                            16
+                             = 	--->	OPERATOR: ASSIGNMENT 	                    16
+                             i 	--->	IDENTIFIER 	                            16
+                             * 	--->	OPERATOR: ARITHMETIC 	                    16
+                             2 	--->	NUMERICAL CONSTANT 	                    16
+                             ; 	--->	SEMICOLON 	                            16
+                             a 	--->	IDENTIFIER 	                            17
+                             = 	--->	OPERATOR: ASSIGNMENT 	                    17
+                             a 	--->	IDENTIFIER 	                            17
+                             ^ 	--->	OPERATOR: BITWISE 	                     17
+                             i 	--->	IDENTIFIER 	                            17
+                             ; 	--->	SEMICOLON 	                            17
+                         scanf 	--->	INBUILT LIBRARY FUNCTION: STDIO 	     18
+                             ( 	--->	PARENTHESIS 	                            18
+                          "%c" 	--->	STRING 	                            18
+                             , 	--->	COMMA 	                                    18
+                             & 	--->	OPERATOR: BITWISE 	                     18
+                             x 	--->	IDENTIFIER 	                            18
+                             [ 	--->	PARENTHESIS 	                            18
+                             i 	--->	IDENTIFIER 	                            18
+                             ] 	--->	PARENTHESIS 	                            18
+                             ) 	--->	PARENTHESIS 	                            18
+                             ; 	--->	SEMICOLON 	                            18
+                             } 	--->	PARENTHESIS 	                            19
+                         while 	--->	KEYWORD: CONTROL STATEMENT 	             20
+                             ( 	--->	PARENTHESIS 	                            20
+                             i 	--->	IDENTIFIER 	                            20
+                            >= 	--->	OPERATOR: RELATIONAL 	                    20
+                             0 	--->	NUMERICAL CONSTANT 	                    20
+                            && 	--->	OPERATOR: LOGICAL 	                     20
+                             i 	--->	IDENTIFIER 	                            20
+                            != 	--->	OPERATOR: RELATIONAL 	                    20
+                            10 	--->	NUMERICAL CONSTANT 	                    20
+                             ) 	--->	PARENTHESIS 	                            20
+                             { 	--->	PARENTHESIS 	                            21
+                        printf 	--->	INBUILT LIBRARY FUNCTION: STDIO 	     22
+                             ( 	--->	PARENTHESIS 	                            22
+                           "d" 	--->	STRING 	                            22
+                             ) 	--->	PARENTHESIS 	                            22
+                             ; 	--->	SEMICOLON 	                            22
+                             i 	--->	IDENTIFIER 	                            23
+                            -- 	--->	OPERATOR: UNARY 	                    23
+                             ; 	--->	SEMICOLON 	                            23
+/*
+this is multiline comment to test the functionality of the analyzer
+*/ 
+                               	--->	MULTILINE COMMENT 	                    24
+                        printf 	--->	INBUILT LIBRARY FUNCTION: STDIO 	     27
+                             ( 	--->	PARENTHESIS 	                            27
+                     "Sum: %d" 	--->	STRING 	                            27
+                             , 	--->	COMMA 	                                    27
+                             c 	--->	IDENTIFIER 	                            27
+                             ) 	--->	PARENTHESIS 	                            27
+                             ; 	--->	SEMICOLON 	                            27
+                             } 	--->	PARENTHESIS 	                            28
+                         check 	--->	IDENTIFIER 	                            29
+                             ( 	--->	PARENTHESIS 	                            29
+                           int 	--->	KEYWORD: DATATYPE 	                    29
+                             a 	--->	IDENTIFIER 	                            29
+                             ) 	--->	PARENTHESIS 	                            29
+                             ; 	--->	SEMICOLON 	                            29
+                             } 	--->	PARENTHESIS 	                            31
+
+-------------------------------------------------------------------------------------------------------
+
+Number of lines: 31 
+
+
+Number of Identifiers: 35 
+
+
+Number of Keywords: 7 
+
+
+Number of Numerical Constants: 11
+
+
+Number of Comments: 2
+
